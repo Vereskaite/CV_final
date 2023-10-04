@@ -49,7 +49,7 @@ Contact Info {#contact}
 --------------------------------------------------------------------------------
 
 - <i class="fa fa-envelope"></i> veresk.diana@gmail.com
-- <i class="fa fa-linkedin"></i> [linkedin.com/vereskaite](www.linkedin.com/in/diana-vereskaite)
+- <i class="fa fa-linkedin"></i> [linkedin.com/vereskaite](https://linkedin.com/in/vereskaite)
 - <i class="fa fa-github"></i> [github.com/vereskaite](https://github.com/vereskaite)
 - <i class="fa fa-phone"></i> +370 665 12 743
 - <i class="fas fa-calendar-alt"></i> 1993-10-23
