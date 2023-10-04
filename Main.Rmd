@@ -1,0 +1,237 @@
+---
+title: "Diana Vereškaitė resume"
+author: Diana Vereškaitė
+date: "`r Sys.Date()`"
+output:
+  pagedown::html_resume:
+    css: 
+      - css/custom_resume.css
+      # - css/override.css
+      - css/styles.css      # OVERIDE CERTAIN FUNCTIONS OF CSS
+      - resume               # DEFAULT FILE
+    # set it to true for a self-contained HTML page but it'll take longer to render
+    self_contained: false
+# uncomment this line to produce HTML and PDF in RStudio:
+knit: pagedown::chrome_print
+
+
+---
+
+```{r, include=FALSE}
+library(knitr)
+
+knitr::opts_chunk$set(
+  results='asis', 
+  echo = FALSE
+)
+library(tidyverse)
+library(glue)
+# ======================================================================
+using_googlesheets <- FALSE
+sheet_is_publicly_readable <- FALSE
+PDF_EXPORT <- FALSE
+links <- c()
+# ======================================================================
+# Functions for building sections from CSV data
+source('parsing_functions.R') 
+# Load data for CV/Resume
+source('gather_data.R')
+```
+
+Aside
+================================================================================
+
+
+<!-- ![Diana Vereskaite](C:/CV/cv pic.jpg) -->
+
+
+Contact Info {#contact}
+--------------------------------------------------------------------------------
+
+- <i class="fa fa-envelope"></i> veresk.diana@gmail.com
+- <i class="fa fa-linkedin"></i> [linkedin.com/vereskaite](www.linkedin.com/in/diana-vereskaite)
+- <i class="fa fa-github"></i> [github.com/vereskaite](https://github.com/vereskaite)
+- <i class="fa fa-phone"></i> +370 665 12 743
+- <i class="fas fa-calendar-alt"></i> 1993-10-23
+
+
+Skills {#skills}
+--------------------------------------------------------------------------------
+```{r}
+build_skill_bars(skills)
+
+```
+
+
+
+
+Languages {#languages}
+--------------------------------------------------------------------------------
+- Lithuanian (Native)
+- English C1
+- Spanish B1
+- Russian A2
+
+
+Main
+================================================================================
+
+Diana Vereškaitė {#title}
+--------------------------------------------------------------------------------
+
+### Searching for Data Analyst/Data Scientist position
+
+Currently a second year PhD student in applied mathematics field, with Master's degree in econometrics. Former senior investment analyst and business analyst with 6 years of experience in data analysis. Gained R skills both from academia and industry. Proficient in data processing, modelling, forecasting and visualizing in order to achieve best solutions for business. Experienced in designing, developing, testing and deploying tools to optimize processes.
+
+Education {data-icon=graduation-cap data-concise=true}
+--------------------------------------------------------------------------------
+### PhD Mathematics
+Vilnius University
+
+N/A
+
+2022 - now
+
+Research field: Applied Mathematics, Time Series, Volatility modeling
+
+### MSc Econometrics
+
+Vilnius University; Thesis: volatility modeling of financial time series.
+
+N/A
+
+2017-2019
+
+
+### BSc Analysis of Economics
+
+Vilnius University; Thesis: clustering analysis of EU macroeconomics.
+
+N/A
+
+2012-2016
+
+
+
+### Vilnius Žirmūnų gymnasium
+
+N/A
+
+N/A
+
+2008-2012
+
+  
+
+Professional Experience {data-icon=suitcase}
+--------------------------------------------------------------------------------
+
+### Investment Analyst
+Intrum
+
+N/A
+
+2018.10-2022.11
+
+**<span style="color: DarkBlue;<b>">Senior Investment Analyst:</b></span>**
+<!-- **Senior Investment Analyst:** -->
+
+::: concise
+- Higher complexity portfolios.
+- Supplementary analyses and reviews.
+:::
+
+**<span style="color: DarkBlue;<b>">Global Investment Analyst:</b></span>**
+<!-- **Group Investment Analyst:** -->
+
+::: concise
+- <strong> <span style="color:black"> *Dynamic Data Analysis and Investment Forecasting:*</span> </strong> Conducted data analysis for banking investment portfolios across Europe, dynamically accommodating each country's specifics. Performed investment return forecasting.
+- <strong> <span style="color:black"> *Stakeholder Communication and Collaborative Analysis:*</span> </strong> Delivered presentations to stakeholders, facilitating well-informed investment decisions. Collaborated with other analyst teams, reviewed and provided feedback on their analysis, ensuring a common yet diverse perspective on the portfolio.
+- <strong> <span style="color:black"> *Technical Transition Leadership*</span> </strong> Led team's transition from Excel to R, enhancing data analysis capabilities and efficiency. Provided consulting and assistance to colleagues throughout the process.
+- <strong> <span style="color:black"> *R Shiny Application Development:*</span> </strong> Coordinated team and actively contributed to the design, development, test and deployment of R Shiny application for investment portfolio analysis. The project put a common standard across teams and reduced the need for proficient coding. This made the analysis more accessible, easier, and faster, especially for less complex portfolios.
+
+:::
+
+**<span style="color: DarkBlue;<b>">Local Investment Analyst (Baltic States)</b></span>**
+
+<!-- **Local Investment Analyst (Baltic States):** -->
+
+::: concise
+- <strong> <span style="color:black"> *Data Analysis:*</span> </strong> Conducted comprehensive data analysis to evaluate banking investment portfolios in Baltic States, asses their risk and identify opportunities to enable data-driven desicions.
+- <strong> <span style="color:black"> *Investment Forecasting:*</span> </strong> Used statistical models for forecasting investment returns.
+- <strong> <span style="color:black"> *Stakeholder Communication:*</span> </strong> Delivered clear and insightful portfolio overviews to stakeholders, ensuring transparency and informed decision-making.
+- <strong> <span style="color:black"> *Automation Development:*</span> </strong> Developed automation tools using R to improve efficiency and accuracy of analysis.
+
+:::
+
+### Business Analyst
+
+UAB Transcom Worldwide
+
+N/A
+
+2016.04 – 2018.04
+
+::: concise
+- <strong> <span style="color:black"> *Data Analysis and Strategic Insights:*</span> </strong> Conducted thorough review of call center data, performed trend analysis, and resource forecasting, leading to strategic recommendations for management. These initiatives optimized resources and enhanced staffing, resulting in improved operational functions.
+- <strong> <span style="color:black"> *Market Expansion Leadership:*</span> </strong> Led improvements in the emerging Serbian market through data-driven decisions, contributing to substantial growth of the project.
+
+:::
+
+<!-- ### Receptionist -->
+
+<!-- Fergus Hotels -->
+
+<!-- Mallorca, Spain -->
+
+<!-- 2014.06 - 2014.09 -->
+
+<!-- ::: concise -->
+<!-- - Executive and administrative support -->
+<!-- - Front desk reception -->
+<!-- - Office and supply maintenance -->
+<!-- - Coordination of hotel employees tasks -->
+<!-- ::: -->
+
+<!-- ### Duty Manager -->
+
+<!-- UAB Transcom Worldwide -->
+
+<!-- N/A -->
+
+<!-- 2013.12 – 2014.06 -->
+
+<!-- ::: concise -->
+<!-- - Coordinating logistic coordinators' daily routines, KPIs -->
+<!-- - Resolving complicated customer inquiries -->
+<!-- ::: -->
+
+<!-- ### Logistics Coordinator -->
+
+<!-- UAB Transcom Worldwide -->
+
+<!-- N/A -->
+
+<!-- 2012.06 – 2013.12 -->
+
+<!-- ::: concise -->
+<!-- - Coordinating and monitoring carrier operations -->
+<!-- - Providing customer support to carrier clients -->
+<!-- ::: -->
+
+
+<!-- Internship {data-icon=laptop} -->
+<!-- -------------------------------------------------------------------------------- -->
+
+<!-- ### Intern for healthcare system analysis -->
+
+<!-- Lithuanian free market institute -->
+
+<!-- N/A -->
+
+<!-- 2016.02 – 2016.04 -->
+
+<!-- ::: concise -->
+<!-- - Performing qualitative and quantitative analysis of Lithuania’s healthcare system -->
+<!-- - Collecting data  -->
+<!-- ::: -->
